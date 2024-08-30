@@ -1,5 +1,5 @@
 {
-    "name": "botman/botman",
+    "name": "lflores10/botman",
     "license": "MIT",
     "description": "Create messaging bots in PHP with ease.",
     "keywords": [
@@ -7,7 +7,7 @@
         "BotMan",
         "Chatbot"
     ],
-    "homepage": "http://github.com/botman/botman",
+    "homepage": "http://github.com/lflores10/botman",
     "authors": [
         {
             "name": "Marcel Pociot",
