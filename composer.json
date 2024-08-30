@@ -40,12 +40,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BotMan\\BotMan\\": "src/"
+            "lflores10\\BotMan\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BotMan\\BotMan\\Tests\\": "tests/"
+            "lflores10\\BotMan\\Tests\\": "tests/"
         }
     },
     "extra": {
@@ -54,10 +54,10 @@
         },
         "laravel": {
             "providers": [
-                "BotMan\\BotMan\\BotManServiceProvider"
+                "lflores10\\BotMan\\BotManServiceProvider"
             ],
             "aliases": {
-                "BotMan": "BotMan\\BotMan\\Facades\\BotMan"
+                "BotMan": "lflores10\\BotMan\\Facades\\BotMan"
             }
         }
     },
