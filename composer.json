@@ -1,5 +1,5 @@
 {
-    "name": "lflores10/botman",
+    "name": "11lf11/botman",
     "license": "MIT",
     "description": "Create messaging bots in PHP with ease.",
     "keywords": [
@@ -7,7 +7,7 @@
         "BotMan",
         "Chatbot"
     ],
-    "homepage": "http://github.com/lflores10/botman",
+    "homepage": "http://github.com/11lf11/botman",
     "authors": [
         {
             "name": "Marcel Pociot",
@@ -40,12 +40,12 @@
     },
     "autoload": {
         "psr-4": {
-            "lflores10\\BotMan\\": "src/"
+            "11lf11\\BotMan\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "lflores10\\BotMan\\Tests\\": "tests/"
+            "11lf11\\BotMan\\Tests\\": "tests/"
         }
     },
     "extra": {
@@ -54,10 +54,10 @@
         },
         "laravel": {
             "providers": [
-                "lflores10\\BotMan\\BotManServiceProvider"
+                "11lf11\\BotMan\\BotManServiceProvider"
             ],
             "aliases": {
-                "BotMan": "lflores10\\BotMan\\Facades\\BotMan"
+                "BotMan": "11lf11\\BotMan\\Facades\\BotMan"
             }
         }
     },
