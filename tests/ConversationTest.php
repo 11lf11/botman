@@ -1,9 +1,9 @@
 <?php
 
-namespace BotMan\BotMan\tests;
+namespace lf11\BotMan\tests;
 
-use BotMan\BotMan\BotMan;
-use BotMan\BotMan\Tests\Fixtures\TestConversation;
+use lf11\BotMan\BotMan;
+use lf11\BotMan\Tests\Fixtures\TestConversation;
 use Mockery as m;
 use Mockery\MockInterface;
 use PHPUnit\Framework\TestCase;

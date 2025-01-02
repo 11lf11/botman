@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Users;
+namespace lf11\BotMan\Users;
 
-use BotMan\BotMan\Interfaces\UserInterface;
+use lf11\BotMan\Interfaces\UserInterface;
 
 class User implements UserInterface
 {

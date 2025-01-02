@@ -1,17 +1,17 @@
 <?php
 
-namespace BotMan\BotMan\Messages\Conversations;
+namespace lf11\BotMan\Messages\Conversations;
 
-use BotMan\BotMan\BotMan;
-use BotMan\BotMan\Interfaces\ShouldQueue;
-use BotMan\BotMan\Messages\Attachments\Audio;
-use BotMan\BotMan\Messages\Attachments\Contact;
-use BotMan\BotMan\Messages\Attachments\File;
-use BotMan\BotMan\Messages\Attachments\Image;
-use BotMan\BotMan\Messages\Attachments\Location;
-use BotMan\BotMan\Messages\Attachments\Video;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
-use BotMan\BotMan\Messages\Outgoing\Question;
+use lf11\BotMan\BotMan;
+use lf11\BotMan\Interfaces\ShouldQueue;
+use lf11\BotMan\Messages\Attachments\Audio;
+use lf11\BotMan\Messages\Attachments\Contact;
+use lf11\BotMan\Messages\Attachments\File;
+use lf11\BotMan\Messages\Attachments\Image;
+use lf11\BotMan\Messages\Attachments\Location;
+use lf11\BotMan\Messages\Attachments\Video;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Messages\Outgoing\Question;
 use Closure;
 use Illuminate\Support\Collection;
 use Spatie\Macroable\Macroable;
@@ -70,7 +70,7 @@ abstract class Conversation
     }
 
     /**
-     * @param string|\BotMan\BotMan\Messages\Outgoing\Question $question
+     * @param string|\lf11\BotMan\Messages\Outgoing\Question $question
      * @param array|Closure $next
      * @param array|Closure $repeat
      * @param array $additionalParameters
@@ -86,7 +86,7 @@ abstract class Conversation
     }
 
     /**
-     * @param string|\BotMan\BotMan\Messages\Outgoing\Question $question
+     * @param string|\lf11\BotMan\Messages\Outgoing\Question $question
      * @param array|Closure $next
      * @param array|Closure $repeat
      * @param array $additionalParameters
@@ -102,7 +102,7 @@ abstract class Conversation
     }
 
     /**
-     * @param string|\BotMan\BotMan\Messages\Outgoing\Question $question
+     * @param string|\lf11\BotMan\Messages\Outgoing\Question $question
      * @param array|Closure $next
      * @param array|Closure $repeat
      * @param array $additionalParameters
@@ -118,7 +118,7 @@ abstract class Conversation
     }
 
     /**
-     * @param string|\BotMan\BotMan\Messages\Outgoing\Question $question
+     * @param string|\lf11\BotMan\Messages\Outgoing\Question $question
      * @param array|Closure $next
      * @param array|Closure $repeat
      * @param array $additionalParameters
@@ -134,7 +134,7 @@ abstract class Conversation
     }
 
     /**
-     * @param string|\BotMan\BotMan\Messages\Outgoing\Question $question
+     * @param string|\lf11\BotMan\Messages\Outgoing\Question $question
      * @param array|Closure $next
      * @param array|Closure $repeat
      * @param array $additionalParameters
@@ -150,7 +150,7 @@ abstract class Conversation
     }
 
     /**
-     * @param string|\BotMan\BotMan\Messages\Outgoing\Question $question
+     * @param string|\lf11\BotMan\Messages\Outgoing\Question $question
      * @param array|Closure                                    $next
      * @param array|Closure                                    $repeat
      * @param array                                            $additionalParameters
@@ -196,7 +196,7 @@ abstract class Conversation
     }
 
     /**
-     * @param string|\BotMan\BotMan\Messages\Outgoing\Question $message
+     * @param string|\lf11\BotMan\Messages\Outgoing\Question $message
      * @param array $additionalParameters
      * @return $this
      */

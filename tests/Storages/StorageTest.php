@@ -1,9 +1,9 @@
 <?php
 
-namespace BotMan\BotMan\tests\Storages;
+namespace lf11\BotMan\Tests\Storages;
 
-use BotMan\BotMan\Storages\Drivers\FileStorage;
-use BotMan\BotMan\Storages\Storage;
+use lf11\BotMan\Storages\Drivers\FileStorage;
+use lf11\BotMan\Storages\Storage;
 use PHPUnit\Framework\TestCase;
 
 class StorageTest extends TestCase

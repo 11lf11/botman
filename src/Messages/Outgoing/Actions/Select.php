@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Messages\Outgoing\Actions;
+namespace lf11\BotMan\Messages\Outgoing\Actions;
 
-use BotMan\BotMan\Interfaces\QuestionActionInterface;
+use lf11\BotMan\Interfaces\QuestionActionInterface;
 use JsonSerializable;
 
 class Select implements JsonSerializable, QuestionActionInterface

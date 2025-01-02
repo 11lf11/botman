@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Interfaces;
+namespace lf11\BotMan\Interfaces;
 
-use BotMan\BotMan\BotMan;
+use lf11\BotMan\BotMan;
 
 interface ExceptionHandlerInterface
 {

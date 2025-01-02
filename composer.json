@@ -15,8 +15,8 @@
         }
     ],
     "require": {
-        "php": ">=7.1",
-        "symfony/http-foundation": "^2.8 || ^3.0 || ^4.0 || ^5.0 || ^6.0 || ^7.0",
+        "php": ">=8.1",
+        "symfony/http-foundation": "7.1.7.0",
         "mpociot/pipeline": "^1.0.2",
         "react/socket": "~1.0",
         "spatie/macroable": "^1.0",
@@ -32,7 +32,8 @@
         "doctrine/cache": "^1.6",
         "symfony/cache": "^3.4.35 || ^4.3.7 || ^5.0",
         "ext-curl": "*",
-        "dms/phpunit-arraysubset-asserts": "^0.4.0"
+        "dms/phpunit-arraysubset-asserts": "^0.4.0",
+      "ext-redis": "*"
     },
     "suggest": {
         "doctrine/cache": "Use any Doctrine cache driver for cache",
@@ -40,12 +41,12 @@
     },
     "autoload": {
         "psr-4": {
-            "11lf11\\BotMan\\": "src/"
+            "lf11\\BotMan\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "11lf11\\BotMan\\Tests\\": "tests/"
+            "lf11\\BotMan\\Tests\\": "tests/"
         }
     },
     "extra": {
@@ -54,10 +55,10 @@
         },
         "laravel": {
             "providers": [
-                "11lf11\\BotMan\\BotManServiceProvider"
+                "lf11\\BotMan\\BotManServiceProvider"
             ],
             "aliases": {
-                "BotMan": "11lf11\\BotMan\\Facades\\BotMan"
+                "BotMan": "lf11\\BotMan\\Facades\\BotMan"
             }
         }
     },

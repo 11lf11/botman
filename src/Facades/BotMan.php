@@ -1,6 +1,6 @@
 <?php
 
-namespace BotMan\BotMan\Facades;
+namespace lf11\BotMan\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

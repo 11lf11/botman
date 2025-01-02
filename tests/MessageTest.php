@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\tests;
+namespace lf11\BotMan\tests;
 
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
 use PHPUnit\Framework\TestCase;
 
 class MessageTest extends TestCase

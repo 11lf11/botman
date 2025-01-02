@@ -1,6 +1,6 @@
 <?php
 
-namespace BotMan\BotMan\Exceptions\Base;
+namespace lf11\BotMan\Exceptions\Base;
 
 class DriverAttachmentException extends DriverException
 {

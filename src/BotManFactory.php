@@ -1,13 +1,13 @@
 <?php
 
-namespace BotMan\BotMan;
+namespace lf11\BotMan;
 
-use BotMan\BotMan\Cache\ArrayCache;
-use BotMan\BotMan\Drivers\DriverManager;
-use BotMan\BotMan\Http\Curl;
-use BotMan\BotMan\Interfaces\CacheInterface;
-use BotMan\BotMan\Interfaces\StorageInterface;
-use BotMan\BotMan\Storages\Drivers\FileStorage;
+use lf11\BotMan\Cache\ArrayCache;
+use lf11\BotMan\Drivers\DriverManager;
+use lf11\BotMan\Http\Curl;
+use lf11\BotMan\Interfaces\CacheInterface;
+use lf11\BotMan\Interfaces\StorageInterface;
+use lf11\BotMan\Storages\Drivers\FileStorage;
 use React\EventLoop\LoopInterface;
 use React\Socket\Server;
 use Symfony\Component\HttpFoundation\Request;
@@ -46,7 +46,7 @@ class BotManFactory
      * @param CacheInterface $cache
      * @param Request $request
      * @param StorageInterface $storageDriver
-     * @return \BotMan\BotMan\BotMan
+     * @return \lf11\BotMan\BotMan
      */
     public static function create(
         array $config,
@@ -77,7 +77,7 @@ class BotManFactory
      * @param LoopInterface $loop
      * @param CacheInterface $cache
      * @param StorageInterface $storageDriver
-     * @return \BotMan\BotMan\BotMan
+     * @return \lf11\BotMan\BotMan
      */
     public static function createForSocket(
         array $config,

@@ -1,11 +1,11 @@
 <?php
 
-namespace BotMan\BotMan\Commands;
+namespace lf11\BotMan\Commands;
 
-use BotMan\BotMan\Closure;
-use BotMan\BotMan\Interfaces\DriverInterface;
-use BotMan\BotMan\Interfaces\Middleware\Heard;
-use BotMan\BotMan\Interfaces\Middleware\Matching;
+use lf11\BotMan\Closure;
+use lf11\BotMan\Interfaces\DriverInterface;
+use lf11\BotMan\Interfaces\Middleware\Heard;
+use lf11\BotMan\Interfaces\Middleware\Matching;
 use Illuminate\Support\Collection;
 
 class Command

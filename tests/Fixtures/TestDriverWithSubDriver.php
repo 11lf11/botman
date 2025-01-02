@@ -1,12 +1,12 @@
 <?php
 
-namespace BotMan\BotMan\Tests\Fixtures;
+namespace lf11\BotMan\Tests\Fixtures;
 
-use BotMan\BotMan\Interfaces\DriverInterface;
-use BotMan\BotMan\Messages\Incoming\Answer;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
-use BotMan\BotMan\Messages\Outgoing\Question;
-use BotMan\BotMan\Users\User;
+use lf11\BotMan\Interfaces\DriverInterface;
+use lf11\BotMan\Messages\Incoming\Answer;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Messages\Outgoing\Question;
+use lf11\BotMan\Users\User;
 
 class TestDriverWithSubDriver implements DriverInterface
 {
@@ -58,7 +58,7 @@ class TestDriverWithSubDriver implements DriverInterface
 
     /**
      * @param string|Question $message
-     * @param \BotMan\BotMan\Messages\Incoming\IncomingMessage $matchingMessage
+     * @param \lf11\BotMan\Messages\Incoming\IncomingMessage $matchingMessage
      * @param array $additionalParameters
      * @return mixed
      */
@@ -77,7 +77,7 @@ class TestDriverWithSubDriver implements DriverInterface
     }
 
     /**
-     * @param \BotMan\BotMan\Messages\Incoming\IncomingMessage $matchingMessage
+     * @param \lf11\BotMan\Messages\Incoming\IncomingMessage $matchingMessage
      * @return string
      */
     public function types(IncomingMessage $matchingMessage)
@@ -119,7 +119,7 @@ class TestDriverWithSubDriver implements DriverInterface
 
     /**
      * Retrieve User information.
-     * @param \BotMan\BotMan\Messages\Incoming\IncomingMessage $matchingMessage
+     * @param \lf11\BotMan\Messages\Incoming\IncomingMessage $matchingMessage
      * @return UserInterface
      */
     public function getUser(IncomingMessage $matchingMessage)

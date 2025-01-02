@@ -1,10 +1,10 @@
 <?php
 
-namespace BotMan\BotMan;
+namespace lf11\BotMan;
 
-use BotMan\BotMan\Cache\LaravelCache;
-use BotMan\BotMan\Container\LaravelContainer;
-use BotMan\BotMan\Storages\Drivers\FileStorage;
+use lf11\BotMan\Cache\LaravelCache;
+use lf11\BotMan\Container\LaravelContainer;
+use lf11\BotMan\Storages\Drivers\FileStorage;
 use Illuminate\Support\ServiceProvider;
 
 class BotManServiceProvider extends ServiceProvider

@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Tests\Cache;
+namespace lf11\BotMan\Tests\Cache;
 
-use BotMan\BotMan\Cache\DoctrineCache;
+use lf11\BotMan\Cache\DoctrineCache;
 use Doctrine\Common\Cache\CacheProvider;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;

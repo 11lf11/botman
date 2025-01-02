@@ -1,14 +1,14 @@
 <?php
 
-namespace BotMan\BotMan\tests;
+namespace lf11\BotMan\tests;
 
-use BotMan\BotMan\BotMan;
-use BotMan\BotMan\BotManFactory;
-use BotMan\BotMan\Cache\ArrayCache;
-use BotMan\BotMan\Drivers\Tests\FakeDriver;
-use BotMan\BotMan\Exceptions\Base\BotManException;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
-use BotMan\BotMan\Tests\Fixtures\TestClass;
+use lf11\BotMan\BotMan;
+use lf11\BotMan\BotManFactory;
+use lf11\BotMan\Cache\ArrayCache;
+use lf11\BotMan\Drivers\Tests\FakeDriver;
+use lf11\BotMan\Exceptions\Base\BotManException;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Tests\Fixtures\TestClass;
 use Exception;
 use Illuminate\Support\Collection;
 use Mockery as m;

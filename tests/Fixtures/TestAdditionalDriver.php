@@ -1,12 +1,12 @@
 <?php
 
-namespace BotMan\BotMan\Tests\Fixtures;
+namespace lf11\BotMan\Tests\Fixtures;
 
-use BotMan\BotMan\Drivers\HttpDriver;
-use BotMan\BotMan\Messages\Incoming\Answer;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
-use BotMan\BotMan\Messages\Outgoing\Question;
-use BotMan\BotMan\Users\User;
+use lf11\BotMan\Drivers\HttpDriver;
+use lf11\BotMan\Messages\Incoming\Answer;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Messages\Outgoing\Question;
+use lf11\BotMan\Users\User;
 use Illuminate\Support\Collection;
 use Symfony\Component\HttpFoundation\ParameterBag;
 use Symfony\Component\HttpFoundation\Request;
@@ -68,7 +68,7 @@ class TestAdditionalDriver extends HttpDriver
 
     /**
      * @param string|Question $message
-     * @param \BotMan\BotMan\Messages\Incoming\IncomingMessage $matchingMessage
+     * @param \lf11\BotMan\Messages\Incoming\IncomingMessage $matchingMessage
      * @param array $additionalParameters
      * @return mixed
      */
@@ -87,7 +87,7 @@ class TestAdditionalDriver extends HttpDriver
     }
 
     /**
-     * @param \BotMan\BotMan\Messages\Incoming\IncomingMessage $matchingMessage
+     * @param \lf11\BotMan\Messages\Incoming\IncomingMessage $matchingMessage
      * @return string
      */
     public function types(IncomingMessage $matchingMessage)
@@ -118,7 +118,7 @@ class TestAdditionalDriver extends HttpDriver
 
     /**
      * Retrieve User information.
-     * @param \BotMan\BotMan\Messages\Incoming\IncomingMessage $matchingMessage
+     * @param \lf11\BotMan\Messages\Incoming\IncomingMessage $matchingMessage
      * @return UserInterface
      */
     public function getUser(IncomingMessage $matchingMessage)
@@ -151,7 +151,7 @@ class TestAdditionalDriver extends HttpDriver
      *
      * @param string $endpoint
      * @param array $parameters
-     * @param \BotMan\BotMan\Messages\Incoming\IncomingMessage $matchingMessage
+     * @param \lf11\BotMan\Messages\Incoming\IncomingMessage $matchingMessage
      * @return void
      */
     public function sendRequest($endpoint, array $parameters, IncomingMessage $matchingMessage)

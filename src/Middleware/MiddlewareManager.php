@@ -1,14 +1,14 @@
 <?php
 
-namespace BotMan\BotMan\Middleware;
+namespace lf11\BotMan\Middleware;
 
-use BotMan\BotMan\BotMan;
-use BotMan\BotMan\Interfaces\Middleware\Captured;
-use BotMan\BotMan\Interfaces\Middleware\Heard;
-use BotMan\BotMan\Interfaces\Middleware\Matching;
-use BotMan\BotMan\Interfaces\Middleware\Received;
-use BotMan\BotMan\Interfaces\Middleware\Sending;
-use BotMan\BotMan\Interfaces\MiddlewareInterface;
+use lf11\BotMan\BotMan;
+use lf11\BotMan\Interfaces\Middleware\Captured;
+use lf11\BotMan\Interfaces\Middleware\Heard;
+use lf11\BotMan\Interfaces\Middleware\Matching;
+use lf11\BotMan\Interfaces\Middleware\Received;
+use lf11\BotMan\Interfaces\Middleware\Sending;
+use lf11\BotMan\Interfaces\MiddlewareInterface;
 use Closure;
 use Mpociot\Pipeline\Pipeline;
 

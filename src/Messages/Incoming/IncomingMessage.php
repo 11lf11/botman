@@ -1,9 +1,9 @@
 <?php
 
-namespace BotMan\BotMan\Messages\Incoming;
+namespace lf11\BotMan\Messages\Incoming;
 
-use BotMan\BotMan\Messages\Attachments\Contact;
-use BotMan\BotMan\Messages\Attachments\Location;
+use lf11\BotMan\Messages\Attachments\Contact;
+use lf11\BotMan\Messages\Attachments\Location;
 use Illuminate\Support\Collection;
 
 class IncomingMessage
@@ -38,10 +38,10 @@ class IncomingMessage
     /** @var array */
     private $files = [];
 
-    /** @var \BotMan\BotMan\Messages\Attachments\Location */
+    /** @var \lf11\BotMan\Messages\Attachments\Location */
     private $location;
 
-    /** @var \BotMan\BotMan\Messages\Attachments\Contact */
+    /** @var \lf11\BotMan\Messages\Attachments\Contact */
     private $contact;
 
     /** @var bool */
@@ -199,7 +199,7 @@ class IncomingMessage
     }
 
     /**
-     * @param \BotMan\BotMan\Messages\Attachments\Location $location
+     * @param \lf11\BotMan\Messages\Attachments\Location $location
      */
     public function setLocation(Location $location)
     {
@@ -207,7 +207,7 @@ class IncomingMessage
     }
 
     /**
-     * @return \BotMan\BotMan\Messages\Attachments\Location
+     * @return \lf11\BotMan\Messages\Attachments\Location
      */
     public function getLocation(): Location
     {
@@ -219,7 +219,7 @@ class IncomingMessage
     }
 
     /**
-     * @return \BotMan\BotMan\Messages\Attachments\Contact
+     * @return \lf11\BotMan\Messages\Attachments\Contact
      */
     public function getContact(): Contact
     {
@@ -231,7 +231,7 @@ class IncomingMessage
     }
 
     /**
-     * @param \BotMan\BotMan\Messages\Attachments\Contact $contact
+     * @param \lf11\BotMan\Messages\Attachments\Contact $contact
      */
     public function setContact(Contact $contact)
     {

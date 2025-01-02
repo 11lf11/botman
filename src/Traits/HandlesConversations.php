@@ -1,12 +1,12 @@
 <?php
 
-namespace BotMan\BotMan\Traits;
+namespace lf11\BotMan\Traits;
 
-use BotMan\BotMan\Drivers\DriverManager;
-use BotMan\BotMan\Interfaces\ShouldQueue;
-use BotMan\BotMan\Messages\Conversations\Conversation;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
-use BotMan\BotMan\Messages\Outgoing\Question;
+use lf11\BotMan\Drivers\DriverManager;
+use lf11\BotMan\Interfaces\ShouldQueue;
+use lf11\BotMan\Messages\Conversations\Conversation;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Messages\Outgoing\Question;
 use Closure;
 use Illuminate\Support\Collection;
 use Laravel\SerializableClosure\SerializableClosure;
@@ -14,7 +14,7 @@ use Laravel\SerializableClosure\SerializableClosure;
 trait HandlesConversations
 {
     /**
-     * @param \BotMan\BotMan\Messages\Conversations\Conversation $instance
+     * @param \lf11\BotMan\Messages\Conversations\Conversation $instance
      * @param null|string $recipient
      * @param null|string $driver
      */
@@ -29,7 +29,7 @@ trait HandlesConversations
     }
 
     /**
-     * @param \BotMan\BotMan\Messages\Conversations\Conversation $instance
+     * @param \lf11\BotMan\Messages\Conversations\Conversation $instance
      * @param array|Closure $next
      * @param string|Question $question
      * @param array $additionalParameters
@@ -260,7 +260,7 @@ trait HandlesConversations
      */
     protected function callConversation($next, $convo, IncomingMessage $message, array $parameters)
     {
-        /** @var \BotMan\BotMan\Messages\Conversations\Conversation $conversation */
+        /** @var \lf11\BotMan\Messages\Conversations\Conversation $conversation */
         $conversation = $convo['conversation'];
         if (!$conversation instanceof ShouldQueue) {
             $conversation->setBot($this);

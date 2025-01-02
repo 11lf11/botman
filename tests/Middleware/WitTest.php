@@ -1,13 +1,13 @@
 <?php
 
-namespace BotMan\BotMan\tests\Middleware;
+namespace lf11\BotMan\Tests\Middleware;
 
-use BotMan\BotMan\BotMan;
-use BotMan\BotMan\BotManFactory;
-use BotMan\BotMan\Cache\ArrayCache;
-use BotMan\BotMan\Http\Curl;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
-use BotMan\BotMan\Middleware\Wit;
+use lf11\BotMan\BotMan;
+use lf11\BotMan\BotManFactory;
+use lf11\BotMan\Cache\ArrayCache;
+use lf11\BotMan\Http\Curl;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Middleware\Wit;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpFoundation\Response;

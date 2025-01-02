@@ -1,6 +1,6 @@
 <?php
 
-namespace BotMan\BotMan\Cache;
+namespace lf11\BotMan\Cache;
 
 use Symfony\Component\Cache\Adapter\AdapterInterface;
 

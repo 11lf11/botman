@@ -1,12 +1,12 @@
 <?php
 
-namespace BotMan\BotMan\Middleware;
+namespace lf11\BotMan\Middleware;
 
-use BotMan\BotMan\BotMan;
-use BotMan\BotMan\Http\Curl;
-use BotMan\BotMan\Interfaces\HttpInterface;
-use BotMan\BotMan\Interfaces\MiddlewareInterface;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\BotMan;
+use lf11\BotMan\Http\Curl;
+use lf11\BotMan\Interfaces\HttpInterface;
+use lf11\BotMan\Interfaces\MiddlewareInterface;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
 
 class ApiAi implements MiddlewareInterface
 {
@@ -69,7 +69,7 @@ class ApiAi implements MiddlewareInterface
 
     /**
      * Perform the API.ai API call and cache it for the message.
-     * @param  \BotMan\BotMan\Messages\Incoming\IncomingMessage $message
+     * @param  \lf11\BotMan\Messages\Incoming\IncomingMessage $message
      * @return \stdClass
      */
     protected function getResponse(IncomingMessage $message)
@@ -91,7 +91,7 @@ class ApiAi implements MiddlewareInterface
     /**
      * Handle a captured message.
      *
-     * @param \BotMan\BotMan\Messages\Incoming\IncomingMessage $message
+     * @param \lf11\BotMan\Messages\Incoming\IncomingMessage $message
      * @param BotMan $bot
      * @param $next
      *
@@ -142,7 +142,7 @@ class ApiAi implements MiddlewareInterface
     }
 
     /**
-     * @param \BotMan\BotMan\Messages\Incoming\IncomingMessage $message
+     * @param \lf11\BotMan\Messages\Incoming\IncomingMessage $message
      * @param string $pattern
      * @param bool $regexMatched Indicator if the regular expression was matched too
      * @return bool
@@ -161,7 +161,7 @@ class ApiAi implements MiddlewareInterface
     /**
      * Handle a message that was successfully heard, but not processed yet.
      *
-     * @param \BotMan\BotMan\Messages\Incoming\IncomingMessage $message
+     * @param \lf11\BotMan\Messages\Incoming\IncomingMessage $message
      * @param BotMan $bot
      * @param $next
      *

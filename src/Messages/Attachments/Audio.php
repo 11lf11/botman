@@ -1,6 +1,6 @@
 <?php
 
-namespace BotMan\BotMan\Messages\Attachments;
+namespace lf11\BotMan\Messages\Attachments;
 
 class Audio extends Attachment
 {

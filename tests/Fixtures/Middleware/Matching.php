@@ -1,9 +1,9 @@
 <?php
 
-namespace BotMan\BotMan\Tests\Fixtures\Middleware;
+namespace lf11\BotMan\Tests\Fixtures\Middleware;
 
-use BotMan\BotMan\Interfaces\Middleware\Matching as MatchingInterface;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Interfaces\Middleware\Matching as MatchingInterface;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
 
 class Matching implements MatchingInterface
 {

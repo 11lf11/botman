@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Cache;
+namespace lf11\BotMan\Cache;
 
-use BotMan\BotMan\Interfaces\CacheInterface;
+use lf11\BotMan\Interfaces\CacheInterface;
 use Doctrine\Common\Cache\Cache;
 
 class DoctrineCache implements CacheInterface

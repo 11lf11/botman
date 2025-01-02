@@ -1,15 +1,15 @@
 <?php
 
-namespace BotMan\BotMan\Messages\Outgoing;
+namespace lf11\BotMan\Messages\Outgoing;
 
-use BotMan\BotMan\Messages\Attachments\Attachment;
+use lf11\BotMan\Messages\Attachments\Attachment;
 
 class OutgoingMessage
 {
     /** @var string */
     protected $message;
 
-    /** @var \BotMan\BotMan\Messages\Attachments\Attachment */
+    /** @var \lf11\BotMan\Messages\Attachments\Attachment */
     protected $attachment;
 
     /**
@@ -45,7 +45,7 @@ class OutgoingMessage
     }
 
     /**
-     * @param \BotMan\BotMan\Messages\Attachments\Attachment $attachment
+     * @param \lf11\BotMan\Messages\Attachments\Attachment $attachment
      * @return $this
      */
     public function withAttachment(Attachment $attachment)
@@ -56,7 +56,7 @@ class OutgoingMessage
     }
 
     /**
-     * @return \BotMan\BotMan\Messages\Attachments\Attachment
+     * @return \lf11\BotMan\Messages\Attachments\Attachment
      */
     public function getAttachment()
     {

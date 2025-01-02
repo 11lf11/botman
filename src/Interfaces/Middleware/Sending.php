@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Interfaces\Middleware;
+namespace lf11\BotMan\Interfaces\Middleware;
 
-use BotMan\BotMan\BotMan;
+use lf11\BotMan\BotMan;
 
 interface Sending
 {

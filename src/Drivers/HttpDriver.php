@@ -1,10 +1,10 @@
 <?php
 
-namespace BotMan\BotMan\Drivers;
+namespace lf11\BotMan\Drivers;
 
-use BotMan\BotMan\Interfaces\DriverInterface;
-use BotMan\BotMan\Interfaces\HttpInterface;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Interfaces\DriverInterface;
+use lf11\BotMan\Interfaces\HttpInterface;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
 use Illuminate\Support\Collection;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -109,7 +109,7 @@ abstract class HttpDriver implements DriverInterface
      *
      * @param string $endpoint
      * @param array $parameters
-     * @param \BotMan\BotMan\Messages\Incoming\IncomingMessage $matchingMessage
+     * @param \lf11\BotMan\Messages\Incoming\IncomingMessage $matchingMessage
      * @return void
      */
     abstract public function sendRequest($endpoint, array $parameters, IncomingMessage $matchingMessage);

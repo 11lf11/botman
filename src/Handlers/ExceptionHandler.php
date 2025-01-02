@@ -1,9 +1,9 @@
 <?php
 
-namespace BotMan\BotMan\Handlers;
+namespace lf11\BotMan\Handlers;
 
-use BotMan\BotMan\BotMan;
-use BotMan\BotMan\Interfaces\ExceptionHandlerInterface;
+use lf11\BotMan\BotMan;
+use lf11\BotMan\Interfaces\ExceptionHandlerInterface;
 use Illuminate\Support\Collection;
 
 class ExceptionHandler implements ExceptionHandlerInterface

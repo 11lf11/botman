@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Exceptions\Core;
+namespace lf11\BotMan\Exceptions\Core;
 
-use BotMan\BotMan\Exceptions\Base\BotManException;
+use lf11\BotMan\Exceptions\Base\BotManException;
 
 class UnexpectedValueException extends BotManException
 {

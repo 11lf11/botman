@@ -1,19 +1,19 @@
 <?php
 
-namespace BotMan\BotMan\tests\Drivers;
+namespace lf11\BotMan\Tests\Drivers;
 
-use BotMan\BotMan\BotMan;
-use BotMan\BotMan\BotManFactory;
-use BotMan\BotMan\Drivers\DriverManager;
-use BotMan\BotMan\Drivers\Tests\FakeDriver;
-use BotMan\BotMan\Drivers\Tests\ProxyDriver;
-use BotMan\BotMan\Messages\Incoming\Answer;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\BotMan;
+use lf11\BotMan\BotManFactory;
+use lf11\BotMan\Drivers\DriverManager;
+use lf11\BotMan\Drivers\Tests\FakeDriver;
+use lf11\BotMan\Drivers\Tests\ProxyDriver;
+use lf11\BotMan\Messages\Incoming\Answer;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \BotMan\BotMan\Drivers\Tests\FakeDriver
- * @covers \BotMan\BotMan\Drivers\Tests\ProxyDriver
+ * @covers \lf11\BotMan\Drivers\Tests\FakeDriver
+ * @covers \lf11\BotMan\Drivers\Tests\ProxyDriver
  */
 class FakeDriverTest extends TestCase
 {

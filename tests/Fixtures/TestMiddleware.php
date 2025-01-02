@@ -1,10 +1,10 @@
 <?php
 
-namespace BotMan\BotMan\Tests\Fixtures;
+namespace lf11\BotMan\Tests\Fixtures;
 
-use BotMan\BotMan\BotMan;
-use BotMan\BotMan\Interfaces\MiddlewareInterface;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\BotMan;
+use lf11\BotMan\Interfaces\MiddlewareInterface;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
 
 class TestMiddleware implements MiddlewareInterface
 {
@@ -40,7 +40,7 @@ class TestMiddleware implements MiddlewareInterface
     }
 
     /**
-     * @param \BotMan\BotMan\Messages\Incoming\IncomingMessage $message
+     * @param \lf11\BotMan\Messages\Incoming\IncomingMessage $message
      * @param string $pattern
      * @param bool $regexMatched Indicator if the regular expression was matched too
      * @return bool

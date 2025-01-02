@@ -1,14 +1,14 @@
 <?php
 
-namespace BotMan\BotMan\tests;
+namespace lf11\BotMan\tests;
 
-use BotMan\BotMan\BotMan;
-use BotMan\BotMan\BotManFactory;
-use BotMan\BotMan\Drivers\DriverManager;
-use BotMan\BotMan\Drivers\Tests\FakeDriver;
-use BotMan\BotMan\Drivers\Tests\ProxyDriver;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
-use BotMan\BotMan\Tests\Fixtures\TestCustomMiddleware;
+use lf11\BotMan\BotMan;
+use lf11\BotMan\BotManFactory;
+use lf11\BotMan\Drivers\DriverManager;
+use lf11\BotMan\Drivers\Tests\FakeDriver;
+use lf11\BotMan\Drivers\Tests\ProxyDriver;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Tests\Fixtures\TestCustomMiddleware;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpFoundation\Response;
 

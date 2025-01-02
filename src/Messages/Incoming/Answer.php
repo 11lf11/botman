@@ -1,6 +1,6 @@
 <?php
 
-namespace BotMan\BotMan\Messages\Incoming;
+namespace lf11\BotMan\Messages\Incoming;
 
 class Answer
 {

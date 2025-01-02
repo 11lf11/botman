@@ -1,6 +1,6 @@
 <?php
 
-namespace BotMan\BotMan\Tests\Fixtures;
+namespace lf11\BotMan\Tests\Fixtures;
 
 class InvokableService
 {

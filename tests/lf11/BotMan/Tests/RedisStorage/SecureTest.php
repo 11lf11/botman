@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Tests\RedisStorage;
+namespace lf11\BotMan\Tests\RedisStorage;
 
-use BotMan\BotMan\Storages\Drivers\RedisStorage;
+use lf11\BotMan\Storages\Drivers\RedisStorage;
 use Illuminate\Support\Collection;
 use PHPUnit\Framework\TestCase;
 use Redis;
@@ -35,7 +35,7 @@ class SecureTest extends TestCase
     /** @test */
     public function valid_auth()
     {
-        $storage = new RedisStorage($this->getRedisHost(), $this->getRedisPort(), 'secret');
+        $storage = new RedisStorage($this->getRedisHost(), $this->getRedisPort(), 'testing','secret');
         $key = 'key';
         $data = ['foo' => 1, 'bar' => new \DateTime()];
         $storage->save($data, $key);

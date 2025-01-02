@@ -1,11 +1,11 @@
 <?php
 
-namespace BotMan\BotMan\tests\Storages;
+namespace lf11\BotMan\Tests\Storages;
 
-use BotMan\BotMan\BotManFactory;
-use BotMan\BotMan\Drivers\Tests\FakeDriver;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
-use BotMan\BotMan\Storages\Storage;
+use lf11\BotMan\BotManFactory;
+use lf11\BotMan\Drivers\Tests\FakeDriver;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Storages\Storage;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 

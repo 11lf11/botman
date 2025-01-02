@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Cache;
+namespace lf11\BotMan\Cache;
 
-use BotMan\BotMan\Interfaces\CacheInterface;
+use lf11\BotMan\Interfaces\CacheInterface;
 use Redis;
 use RuntimeException;
 
@@ -19,6 +19,7 @@ class RedisCache implements CacheInterface
     private $host;
     private $port;
     private $auth;
+    private $KeyPrefix;
 
     /**
      * RedisCache constructor.
@@ -26,7 +27,7 @@ class RedisCache implements CacheInterface
      * @param $port
      * @param $auth
      */
-    public function __construct($host = '127.0.0.1', $port = 6379, $auth = null)
+    public function __construct($host = '127.0.0.1', $port = 6379, $prefix = null, $auth = null)
     {
         if (! class_exists('Redis')) {
             throw new RuntimeException('phpredis extension is required for RedisCache');
@@ -34,6 +35,7 @@ class RedisCache implements CacheInterface
         $this->host = $host;
         $this->port = $port;
         $this->auth = $auth;
+        $this->KeyPrefix = $prefix ? $prefix.':cache:' : self::KEY_PREFIX;
         $this->connect();
     }
 
@@ -113,7 +115,7 @@ class RedisCache implements CacheInterface
      */
     private function decorateKey($key)
     {
-        return self::KEY_PREFIX.$key;
+        return $this->KeyPrefix.$key;
     }
 
     private function connect()

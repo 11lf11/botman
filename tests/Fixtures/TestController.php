@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Tests\Fixtures;
+namespace lf11\BotMan\Tests\Fixtures;
 
-use BotMan\BotMan\BotMan;
+use lf11\BotMan\BotMan;
 use Illuminate\Http\Request;
 
 class TestController

@@ -1,6 +1,6 @@
 <?php
 
-namespace BotMan\BotMan\Messages\Conversations;
+namespace lf11\BotMan\Messages\Conversations;
 
 class InlineConversation extends Conversation
 {

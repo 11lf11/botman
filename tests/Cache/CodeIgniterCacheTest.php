@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Tests\Cache;
+namespace lf11\BotMan\Tests\Cache;
 
-use BotMan\BotMan\Cache\CodeIgniterCache;
+use lf11\BotMan\Cache\CodeIgniterCache;
 use CI_Cache;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;

@@ -1,9 +1,9 @@
 <?php
 
-namespace BotMan\BotMan\tests;
+namespace lf11\BotMan\tests;
 
-use BotMan\BotMan\BotMan;
-use BotMan\BotMan\BotManFactory;
+use lf11\BotMan\BotMan;
+use lf11\BotMan\BotManFactory;
 use PHPUnit\Framework\TestCase;
 
 class BotManFactoryTest extends TestCase

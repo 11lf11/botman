@@ -1,10 +1,10 @@
 <?php
 
-namespace BotMan\BotMan\tests\Messages;
+namespace lf11\BotMan\Tests\Messages;
 
-use BotMan\BotMan\Messages\Incoming\Answer;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
-use BotMan\BotMan\Messages\Matcher;
+use lf11\BotMan\Messages\Incoming\Answer;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Messages\Matcher;
 use PHPUnit\Framework\TestCase;
 
 class MatcherTest extends TestCase

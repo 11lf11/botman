@@ -1,11 +1,11 @@
 <?php
 
-namespace BotMan\BotMan\Drivers\Tests;
+namespace lf11\BotMan\Drivers\Tests;
 
-use BotMan\BotMan\Drivers\NullDriver;
-use BotMan\BotMan\Http\Curl;
-use BotMan\BotMan\Interfaces\DriverInterface;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Drivers\NullDriver;
+use lf11\BotMan\Http\Curl;
+use lf11\BotMan\Interfaces\DriverInterface;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
 use Symfony\Component\HttpFoundation\Request;
 
 /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace BotMan\BotMan\Interfaces;
+namespace lf11\BotMan\Interfaces;
 
 interface UserInterface
 {

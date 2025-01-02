@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Storages\Drivers;
+namespace lf11\BotMan\Storages\Drivers;
 
-use BotMan\BotMan\Interfaces\StorageInterface;
+use lf11\BotMan\Interfaces\StorageInterface;
 use Illuminate\Support\Collection;
 use Redis;
 use RuntimeException;
@@ -18,6 +18,7 @@ class RedisStorage implements StorageInterface
     private $host;
     private $port;
     private $auth;
+    private $KeyPrefix;
 
     /**
      * RedisCache constructor.
@@ -25,7 +26,7 @@ class RedisStorage implements StorageInterface
      * @param $port
      * @param $auth
      */
-    public function __construct($host = '127.0.0.1', $port = 6379, $auth = null)
+    public function __construct($host = '127.0.0.1', $port = 6379, $prefix = null, $auth = null)
     {
         if (! class_exists(Redis::class)) {
             throw new RuntimeException('phpredis extension is required for RedisStorage');
@@ -33,6 +34,7 @@ class RedisStorage implements StorageInterface
         $this->host = $host;
         $this->port = $port;
         $this->auth = $auth;
+        $this->KeyPrefix = $prefix ? $prefix.':cache:' : self::KEY_PREFIX;
         $this->connect();
     }
 
@@ -95,7 +97,7 @@ class RedisStorage implements StorageInterface
      */
     private function decorateKey($key)
     {
-        return self::KEY_PREFIX.$key;
+        return $this->KeyPrefix.$key;
     }
 
     private function connect()

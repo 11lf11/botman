@@ -1,21 +1,21 @@
 <?php
 
-namespace BotMan\BotMan\tests;
+namespace lf11\BotMan\tests;
 
-use BotMan\BotMan\BotMan;
-use BotMan\BotMan\BotManFactory;
-use BotMan\BotMan\Cache\ArrayCache;
-use BotMan\BotMan\Drivers\DriverManager;
-use BotMan\BotMan\Drivers\Tests\FakeDriver;
-use BotMan\BotMan\Drivers\Tests\ProxyDriver;
-use BotMan\BotMan\Messages\Attachments\Audio;
-use BotMan\BotMan\Messages\Attachments\Contact;
-use BotMan\BotMan\Messages\Attachments\Image;
-use BotMan\BotMan\Messages\Attachments\Location;
-use BotMan\BotMan\Messages\Attachments\Video;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
-use BotMan\BotMan\Tests\Fixtures\TestConversation;
-use BotMan\BotMan\Tests\Fixtures\TestDataConversation;
+use lf11\BotMan\BotMan;
+use lf11\BotMan\BotManFactory;
+use lf11\BotMan\Cache\ArrayCache;
+use lf11\BotMan\Drivers\DriverManager;
+use lf11\BotMan\Drivers\Tests\FakeDriver;
+use lf11\BotMan\Drivers\Tests\ProxyDriver;
+use lf11\BotMan\Messages\Attachments\Audio;
+use lf11\BotMan\Messages\Attachments\Contact;
+use lf11\BotMan\Messages\Attachments\Image;
+use lf11\BotMan\Messages\Attachments\Location;
+use lf11\BotMan\Messages\Attachments\Video;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Tests\Fixtures\TestConversation;
+use lf11\BotMan\Tests\Fixtures\TestDataConversation;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace BotMan\BotMan\Tests\Fixtures;
+namespace lf11\BotMan\Tests\Fixtures;
 
-use BotMan\BotMan\Messages\Conversations\Conversation;
-use BotMan\BotMan\Messages\Incoming\Answer;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Messages\Conversations\Conversation;
+use lf11\BotMan\Messages\Incoming\Answer;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
 
 class TestConversation extends Conversation
 {

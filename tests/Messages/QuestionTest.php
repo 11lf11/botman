@@ -1,9 +1,9 @@
 <?php
 
-namespace BotMan\BotMan\tests\Messages;
+namespace lf11\BotMan\Tests\Messages;
 
-use BotMan\BotMan\Messages\Outgoing\Actions\Button;
-use BotMan\BotMan\Messages\Outgoing\Question;
+use lf11\BotMan\Messages\Outgoing\Actions\Button;
+use lf11\BotMan\Messages\Outgoing\Question;
 use DMS\PHPUnitExtensions\ArraySubset\ArraySubsetAsserts;
 use PHPUnit\Framework\TestCase;
 

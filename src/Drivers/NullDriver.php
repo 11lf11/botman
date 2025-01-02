@@ -1,10 +1,10 @@
 <?php
 
-namespace BotMan\BotMan\Drivers;
+namespace lf11\BotMan\Drivers;
 
-use BotMan\BotMan\Messages\Incoming\Answer;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
-use BotMan\BotMan\Users\User;
+use lf11\BotMan\Messages\Incoming\Answer;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Users\User;
 use Symfony\Component\HttpFoundation\Request;
 
 class NullDriver extends HttpDriver
@@ -65,7 +65,7 @@ class NullDriver extends HttpDriver
     }
 
     /**
-     * @param string|\BotMan\BotMan\Messages\Outgoing\Question $message
+     * @param string|\lf11\BotMan\Messages\Outgoing\Question $message
      * @param IncomingMessage $matchingMessage
      * @param array $additionalParameters
      * @return $this

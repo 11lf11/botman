@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Storages\Drivers;
+namespace lf11\BotMan\Storages\Drivers;
 
-use BotMan\BotMan\Interfaces\StorageInterface;
+use lf11\BotMan\Interfaces\StorageInterface;
 use Illuminate\Support\Collection;
 
 class FileStorage implements StorageInterface

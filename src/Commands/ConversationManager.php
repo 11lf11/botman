@@ -1,19 +1,19 @@
 <?php
 
-namespace BotMan\BotMan\Commands;
+namespace lf11\BotMan\Commands;
 
-use BotMan\BotMan\Interfaces\DriverInterface;
-use BotMan\BotMan\Messages\Attachments\Audio;
-use BotMan\BotMan\Messages\Attachments\Contact;
-use BotMan\BotMan\Messages\Attachments\File;
-use BotMan\BotMan\Messages\Attachments\Image;
-use BotMan\BotMan\Messages\Attachments\Location;
-use BotMan\BotMan\Messages\Attachments\Video;
-use BotMan\BotMan\Messages\Incoming\Answer;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
-use BotMan\BotMan\Messages\Matcher;
-use BotMan\BotMan\Messages\Matching\MatchingMessage;
-use BotMan\BotMan\Middleware\MiddlewareManager;
+use lf11\BotMan\Interfaces\DriverInterface;
+use lf11\BotMan\Messages\Attachments\Audio;
+use lf11\BotMan\Messages\Attachments\Contact;
+use lf11\BotMan\Messages\Attachments\File;
+use lf11\BotMan\Messages\Attachments\Image;
+use lf11\BotMan\Messages\Attachments\Location;
+use lf11\BotMan\Messages\Attachments\Video;
+use lf11\BotMan\Messages\Incoming\Answer;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Messages\Matcher;
+use lf11\BotMan\Messages\Matching\MatchingMessage;
+use lf11\BotMan\Middleware\MiddlewareManager;
 use Illuminate\Support\Collection;
 
 class ConversationManager

@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Tests\Cache;
+namespace lf11\BotMan\Tests\Cache;
 
-use BotMan\BotMan\Cache\Psr6Cache;
+use lf11\BotMan\Cache\Psr6Cache;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;
 use Psr\Cache\CacheItemInterface;

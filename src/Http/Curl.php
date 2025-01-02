@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Http;
+namespace lf11\BotMan\Http;
 
-use BotMan\BotMan\Interfaces\HttpInterface;
+use lf11\BotMan\Interfaces\HttpInterface;
 use Symfony\Component\HttpFoundation\Response;
 
 class Curl implements HttpInterface

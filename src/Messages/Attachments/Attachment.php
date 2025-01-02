@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Messages\Attachments;
+namespace lf11\BotMan\Messages\Attachments;
 
-use BotMan\BotMan\Interfaces\WebAccess;
+use lf11\BotMan\Interfaces\WebAccess;
 use Illuminate\Support\Collection;
 
 abstract class Attachment implements WebAccess

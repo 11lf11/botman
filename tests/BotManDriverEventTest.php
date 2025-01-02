@@ -1,13 +1,13 @@
 <?php
 
-namespace BotMan\BotMan\Tests;
+namespace lf11\BotMan\Tests;
 
-use BotMan\BotMan\BotMan;
-use BotMan\BotMan\BotManFactory;
-use BotMan\BotMan\Drivers\DriverManager;
-use BotMan\BotMan\Drivers\Tests\FakeDriver;
-use BotMan\BotMan\Drivers\Tests\ProxyDriver;
-use BotMan\BotMan\Interfaces\DriverEventInterface;
+use lf11\BotMan\BotMan;
+use lf11\BotMan\BotManFactory;
+use lf11\BotMan\Drivers\DriverManager;
+use lf11\BotMan\Drivers\Tests\FakeDriver;
+use lf11\BotMan\Drivers\Tests\ProxyDriver;
+use lf11\BotMan\Interfaces\DriverEventInterface;
 use PHPUnit\Framework\TestCase;
 
 class BotManDriverEventTest extends TestCase
@@ -76,7 +76,7 @@ class BotManDriverEventTest extends TestCase
     public function it_calls_driver_events_without_closure()
     {
         $this->fakeDriver->hasMatchingEvent = new TestEvent([]);
-        $this->botman->on('test_event', '\BotMan\BotMan\Tests\TestEventClass@event');
+        $this->botman->on('test_event', '\lf11\BotMan\Tests\TestEventClass@event');
         $this->botman->listen();
 
         $this->assertSame([

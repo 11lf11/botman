@@ -1,10 +1,10 @@
 <?php
 
-namespace BotMan\BotMan\Messages\Outgoing;
+namespace lf11\BotMan\Messages\Outgoing;
 
-use BotMan\BotMan\Interfaces\QuestionActionInterface;
-use BotMan\BotMan\Interfaces\WebAccess;
-use BotMan\BotMan\Messages\Outgoing\Actions\Button;
+use lf11\BotMan\Interfaces\QuestionActionInterface;
+use lf11\BotMan\Interfaces\WebAccess;
+use lf11\BotMan\Messages\Outgoing\Actions\Button;
 use JsonSerializable;
 
 class Question implements JsonSerializable, WebAccess
@@ -74,7 +74,7 @@ class Question implements JsonSerializable, WebAccess
     }
 
     /**
-     * @param \BotMan\BotMan\Messages\Outgoing\Actions\Button $button
+     * @param \lf11\BotMan\Messages\Outgoing\Actions\Button $button
      * @return $this
      */
     public function addButton(Button $button)

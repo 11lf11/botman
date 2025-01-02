@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Interfaces;
+namespace lf11\BotMan\Interfaces;
 
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
 use Symfony\Component\HttpFoundation\Response;
 
 interface DriverInterface
@@ -35,12 +35,12 @@ interface DriverInterface
 
     /**
      * @param IncomingMessage $message
-     * @return \BotMan\BotMan\Messages\Incoming\Answer
+     * @return \lf11\BotMan\Messages\Incoming\Answer
      */
     public function getConversationAnswer(IncomingMessage $message);
 
     /**
-     * @param string|\BotMan\BotMan\Messages\Outgoing\Question $message
+     * @param string|\lf11\BotMan\Messages\Outgoing\Question $message
      * @param IncomingMessage $matchingMessage
      * @param array $additionalParameters
      * @return $this

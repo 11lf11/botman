@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Traits;
+namespace lf11\BotMan\Traits;
 
-use BotMan\BotMan\Storages\Storage;
+use lf11\BotMan\Storages\Storage;
 
 trait ProvidesStorage
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Storages;
+namespace lf11\BotMan\Storages;
 
-use BotMan\BotMan\Interfaces\StorageInterface;
+use lf11\BotMan\Interfaces\StorageInterface;
 use Illuminate\Support\Collection;
 
 class Storage implements StorageInterface

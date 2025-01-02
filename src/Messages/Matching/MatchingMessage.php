@@ -1,9 +1,9 @@
 <?php
 
-namespace BotMan\BotMan\Messages\Matching;
+namespace lf11\BotMan\Messages\Matching;
 
-use BotMan\BotMan\Commands\Command;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Commands\Command;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
 
 class MatchingMessage
 {
@@ -38,7 +38,7 @@ class MatchingMessage
     }
 
     /**
-     * @return \BotMan\BotMan\Messages\Incoming\IncomingMessage
+     * @return \lf11\BotMan\Messages\Incoming\IncomingMessage
      */
     public function getMessage(): IncomingMessage
     {

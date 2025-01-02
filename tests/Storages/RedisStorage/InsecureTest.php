@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Tests\RedisStorage;
+namespace lf11\BotMan\Tests\RedisStorage;
 
-use BotMan\BotMan\Storages\Drivers\RedisStorage;
+use lf11\BotMan\Storages\Drivers\RedisStorage;
 use Illuminate\Support\Collection;
 use PHPUnit\Framework\TestCase;
 use Redis;

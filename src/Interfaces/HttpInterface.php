@@ -1,6 +1,6 @@
 <?php
 
-namespace BotMan\BotMan\Interfaces;
+namespace lf11\BotMan\Interfaces;
 
 use Symfony\Component\HttpFoundation\Response;
 

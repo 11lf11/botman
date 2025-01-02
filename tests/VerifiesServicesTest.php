@@ -1,15 +1,15 @@
 <?php
 
-namespace BotMan\BotMan\Tests;
+namespace lf11\BotMan\Tests;
 
-use BotMan\BotMan\BotManFactory;
-use BotMan\BotMan\Drivers\DriverManager;
-use BotMan\BotMan\Drivers\HttpDriver;
-use BotMan\BotMan\Interfaces\UserInterface;
-use BotMan\BotMan\Interfaces\VerifiesService;
-use BotMan\BotMan\Messages\Incoming\Answer;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
-use BotMan\BotMan\Tests\Fixtures\TestDriver;
+use lf11\BotMan\BotManFactory;
+use lf11\BotMan\Drivers\DriverManager;
+use lf11\BotMan\Drivers\HttpDriver;
+use lf11\BotMan\Interfaces\UserInterface;
+use lf11\BotMan\Interfaces\VerifiesService;
+use lf11\BotMan\Messages\Incoming\Answer;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Tests\Fixtures\TestDriver;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -87,7 +87,7 @@ class DummyDriver extends HttpDriver implements VerifiesService
 
     /**
      * @param IncomingMessage $message
-     * @return \BotMan\BotMan\Messages\Incoming\Answer
+     * @return \lf11\BotMan\Messages\Incoming\Answer
      */
     public function getConversationAnswer(IncomingMessage $message)
     {
@@ -95,7 +95,7 @@ class DummyDriver extends HttpDriver implements VerifiesService
     }
 
     /**
-     * @param string|\BotMan\BotMan\Messages\Outgoing\Question $message
+     * @param string|\lf11\BotMan\Messages\Outgoing\Question $message
      * @param IncomingMessage $matchingMessage
      * @param array $additionalParameters
      * @return $this
@@ -125,7 +125,7 @@ class DummyDriver extends HttpDriver implements VerifiesService
      *
      * @param string $endpoint
      * @param array $parameters
-     * @param \BotMan\BotMan\Messages\Incoming\IncomingMessage $matchingMessage
+     * @param \lf11\BotMan\Messages\Incoming\IncomingMessage $matchingMessage
      * @return void
      */
     public function sendRequest($endpoint, array $parameters, IncomingMessage $matchingMessage)

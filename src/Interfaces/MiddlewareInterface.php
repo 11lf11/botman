@@ -1,12 +1,12 @@
 <?php
 
-namespace BotMan\BotMan\Interfaces;
+namespace lf11\BotMan\Interfaces;
 
-use BotMan\BotMan\Interfaces\Middleware\Captured;
-use BotMan\BotMan\Interfaces\Middleware\Heard;
-use BotMan\BotMan\Interfaces\Middleware\Matching;
-use BotMan\BotMan\Interfaces\Middleware\Received;
-use BotMan\BotMan\Interfaces\Middleware\Sending;
+use lf11\BotMan\Interfaces\Middleware\Captured;
+use lf11\BotMan\Interfaces\Middleware\Heard;
+use lf11\BotMan\Interfaces\Middleware\Matching;
+use lf11\BotMan\Interfaces\Middleware\Received;
+use lf11\BotMan\Interfaces\Middleware\Sending;
 
 interface MiddlewareInterface extends Captured, Received, Matching, Heard, Sending
 {

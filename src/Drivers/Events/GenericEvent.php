@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Drivers\Events;
+namespace lf11\BotMan\Drivers\Events;
 
-use BotMan\BotMan\Interfaces\DriverEventInterface;
+use lf11\BotMan\Interfaces\DriverEventInterface;
 
 class GenericEvent implements DriverEventInterface
 {

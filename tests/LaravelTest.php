@@ -1,11 +1,11 @@
 <?php
 
-namespace BotMan\BotMan\tests;
+namespace lf11\BotMan\tests;
 
 use BotMan;
-use BotMan\BotMan\Drivers\Tests\FakeDriver;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
-use BotMan\BotMan\Tests\Fixtures\TestConversation;
+use lf11\BotMan\Drivers\Tests\FakeDriver;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Tests\Fixtures\TestConversation;
 use Cache;
 use Mockery;
 use Orchestra\Testbench\TestCase;
@@ -22,13 +22,13 @@ class LaravelTest extends TestCase
 
     protected function getPackageProviders($app)
     {
-        return [\BotMan\BotMan\BotManServiceProvider::class];
+        return [\lf11\BotMan\BotManServiceProvider::class];
     }
 
     protected function getPackageAliases($app)
     {
         return [
-            'BotMan' => \BotMan\BotMan\Facades\BotMan::class,
+            'BotMan' => \lf11\BotMan\Facades\BotMan::class,
         ];
     }
 
@@ -64,7 +64,7 @@ class LaravelTest extends TestCase
 
         $bot->setDriver($driver);
 
-        $bot->hears('foo', BotMan\BotMan\Tests\Fixtures\TestController::class.'@handle');
+        $bot->hears('foo', \lf11\BotMan\Tests\Fixtures\TestController::class.'@handle');
 
         $bot->listen();
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace BotMan\BotMan\Middleware;
+namespace lf11\BotMan\Middleware;
 
 /**
  * Duplicate of ApiAi, but the product got renamed.

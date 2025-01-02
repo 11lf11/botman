@@ -1,6 +1,6 @@
 <?php
 
-namespace BotMan\BotMan\Container;
+namespace lf11\BotMan\Container;
 
 use Illuminate\Container\EntryNotFoundException;
 use Illuminate\Contracts\Container\Container;

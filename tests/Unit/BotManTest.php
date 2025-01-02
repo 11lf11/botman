@@ -1,13 +1,13 @@
 <?php
 
-namespace BotMan\BotMan\tests\Unit;
+namespace lf11\BotMan\Tests\Unit;
 
-use BotMan\BotMan\BotMan;
-use BotMan\BotMan\BotManFactory;
-use BotMan\BotMan\Cache\ArrayCache;
-use BotMan\BotMan\Drivers\Tests\FakeDriver;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
-use BotMan\BotMan\Tests\Fixtures\TestConversation;
+use lf11\BotMan\BotMan;
+use lf11\BotMan\BotManFactory;
+use lf11\BotMan\Cache\ArrayCache;
+use lf11\BotMan\Drivers\Tests\FakeDriver;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Tests\Fixtures\TestConversation;
 use Illuminate\Support\Collection;
 use Mockery as m;
 use PHPUnit\Framework\TestCase;

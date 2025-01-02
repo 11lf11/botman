@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\tests\Messages;
+namespace lf11\BotMan\Tests\Messages;
 
-use BotMan\BotMan\Messages\Attachments\Image;
+use lf11\BotMan\Messages\Attachments\Image;
 use PHPUnit\Framework\TestCase;
 
 class AttachmentTest extends TestCase

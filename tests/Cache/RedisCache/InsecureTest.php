@@ -1,9 +1,9 @@
 <?php
 
-namespace BotMan\BotMan\Tests\Cache\RedisCache;
+namespace lf11\BotMan\Tests\Cache\RedisCache;
 
-use BotMan\BotMan\Cache\ArrayCache;
-use BotMan\BotMan\Cache\RedisCache;
+use lf11\BotMan\Cache\ArrayCache;
+use lf11\BotMan\Cache\RedisCache;
 use PHPUnit\Framework\TestCase;
 use Redis;
 use RedisException;

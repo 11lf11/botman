@@ -1,12 +1,12 @@
 <?php
 
-namespace BotMan\BotMan\Messages;
+namespace lf11\BotMan\Messages;
 
-use BotMan\BotMan\Commands\Command;
-use BotMan\BotMan\Interfaces\DriverInterface;
-use BotMan\BotMan\Interfaces\Middleware\Matching;
-use BotMan\BotMan\Messages\Incoming\Answer;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Commands\Command;
+use lf11\BotMan\Interfaces\DriverInterface;
+use lf11\BotMan\Interfaces\Middleware\Matching;
+use lf11\BotMan\Messages\Incoming\Answer;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
 use Illuminate\Support\Collection;
 
 class Matcher

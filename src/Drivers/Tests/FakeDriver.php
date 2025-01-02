@@ -1,14 +1,14 @@
 <?php
 
-namespace BotMan\BotMan\Drivers\Tests;
+namespace lf11\BotMan\Drivers\Tests;
 
-use BotMan\BotMan\Drivers\Events\GenericEvent;
-use BotMan\BotMan\Interfaces\DriverInterface;
-use BotMan\BotMan\Interfaces\VerifiesService;
-use BotMan\BotMan\Messages\Incoming\Answer;
-use BotMan\BotMan\Messages\Incoming\IncomingMessage;
-use BotMan\BotMan\Messages\Outgoing\Question;
-use BotMan\BotMan\Users\User;
+use lf11\BotMan\Drivers\Events\GenericEvent;
+use lf11\BotMan\Interfaces\DriverInterface;
+use lf11\BotMan\Interfaces\VerifiesService;
+use lf11\BotMan\Messages\Incoming\Answer;
+use lf11\BotMan\Messages\Incoming\IncomingMessage;
+use lf11\BotMan\Messages\Outgoing\Question;
+use lf11\BotMan\Users\User;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -35,7 +35,7 @@ class FakeDriver implements DriverInterface, VerifiesService
     /** @var bool */
     public $hasMatchingEvent = false;
 
-    /** @var \BotMan\BotMan\Messages\Incoming\IncomingMessage[] */
+    /** @var \lf11\BotMan\Messages\Incoming\IncomingMessage[] */
     public $messages = [];
 
     /** @var bool */

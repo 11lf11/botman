@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\Traits;
+namespace lf11\BotMan\Traits;
 
-use BotMan\BotMan\Interfaces\ExceptionHandlerInterface;
+use lf11\BotMan\Interfaces\ExceptionHandlerInterface;
 
 trait HandlesExceptions
 {

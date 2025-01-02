@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\tests;
+namespace lf11\BotMan\tests;
 
-use BotMan\BotMan\Messages\Outgoing\Actions\Button;
+use lf11\BotMan\Messages\Outgoing\Actions\Button;
 use Illuminate\Support\Arr;
 use PHPUnit\Framework\TestCase;
 

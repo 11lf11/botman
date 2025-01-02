@@ -1,8 +1,8 @@
 <?php
 
-namespace BotMan\BotMan\tests;
+namespace lf11\BotMan\tests;
 
-use BotMan\BotMan\Users\User;
+use lf11\BotMan\Users\User;
 use PHPUnit\Framework\TestCase;
 
 class UserTest extends TestCase
