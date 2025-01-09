@@ -15,8 +15,8 @@
         }
     ],
     "require": {
-        "php": ">=7.4",
-        "symfony/http-foundation": "7.1.7.0",
+        "php": ">=8.1",
+        "symfony/http-foundation": "v6.4.16",
         "mpociot/pipeline": "^1.0.2",
         "react/socket": "~1.0",
         "spatie/macroable": "^1.0",
@@ -31,7 +31,7 @@
         "phpunit/phpunit": "^8.0 || ^9.0 || ^10.0 || ^11.0",
         "mockery/mockery": "^1.1",
         "doctrine/cache": "^1.6",
-        "symfony/cache": "^3.4.35 || ^4.3.7 || ^5.0",
+        "symfony/cache": "v6.4.16",
         "ext-curl": "*",
         "dms/phpunit-arraysubset-asserts": "^0.4.0",
         "ext-redis": "*"
