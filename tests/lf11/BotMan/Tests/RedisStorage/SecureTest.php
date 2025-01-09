@@ -48,7 +48,7 @@ class SecureTest extends TestCase
      */
     public function invalid_auth()
     {
-        $storage = new RedisStorage($this->getRedisHost(), $this->getRedisPort(), 'invalid');
+        $storage = new RedisStorage($this->getRedisHost(), $this->getRedisPort(), 'testing','invalid');
         $key = 'key';
         $data = ['foo' => 1, 'bar' => new \DateTime()];
         $storage->save($data, $key);
@@ -57,7 +57,7 @@ class SecureTest extends TestCase
     /** @test */
     public function get()
     {
-        $storage = new RedisStorage($this->getRedisHost(), $this->getRedisPort(), 'secret');
+        $storage = new RedisStorage($this->getRedisHost(), $this->getRedisPort(), 'testing','secret');
         $key = 'key';
         $data = ['foo' => 1, 'bar' => new \DateTime()];
         $storage->save($data, $key);
@@ -67,7 +67,7 @@ class SecureTest extends TestCase
     /** @test */
     public function delete()
     {
-        $storage = new RedisStorage($this->getRedisHost(), $this->getRedisPort(), 'secret');
+        $storage = new RedisStorage($this->getRedisHost(), $this->getRedisPort(), 'testing','secret');
         $key = 'key';
         $data = ['foo' => 1, 'bar' => new \DateTime()];
         $storage->save($data, $key);
@@ -80,7 +80,7 @@ class SecureTest extends TestCase
     /** @test */
     public function get_all()
     {
-        $storage = new RedisStorage($this->getRedisHost(), $this->getRedisPort(), 'secret');
+        $storage = new RedisStorage($this->getRedisHost(), $this->getRedisPort(), 'testing','secret');
         $key1 = 'key1';
         $data1 = ['foo' => 1, 'bar' => new \DateTime()];
         $storage->save($data1, $key1);

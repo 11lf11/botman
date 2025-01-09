@@ -1514,7 +1514,7 @@ class BotManTest extends TestCase
         $driver->shouldReceive('sendPayload')
             ->once();
 
-        $mock = \Mockery::mock('alias:BotMan\BotMan\Drivers\DriverManager');
+        $mock = \Mockery::mock('alias:lf11\BotMan\Drivers\DriverManager');
         $mock->shouldReceive('loadFromName')
             ->once()
             ->with(FakeDriver::class, [])
@@ -1545,7 +1545,7 @@ class BotManTest extends TestCase
         $driver->shouldReceive('sendPayload')
             ->twice();
 
-        $mock = \Mockery::mock('alias:BotMan\BotMan\Drivers\DriverManager');
+        $mock = \Mockery::mock('alias:lf11\BotMan\Drivers\DriverManager');
         $mock->shouldReceive('loadFromName')
             ->once()
             ->with(FakeDriver::class, [])
@@ -1576,7 +1576,7 @@ class BotManTest extends TestCase
         $driver->shouldReceive('sendPayload')
             ->once();
 
-        $mock = \Mockery::mock('alias:BotMan\BotMan\Drivers\DriverManager');
+        $mock = \Mockery::mock('alias:lf11\BotMan\Drivers\DriverManager');
         $mock->shouldReceive('loadFromName')
             ->once()
             ->with('NullDriver', [])

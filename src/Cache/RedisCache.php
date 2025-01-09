@@ -25,6 +25,7 @@ class RedisCache implements CacheInterface
      * RedisCache constructor.
      * @param $host
      * @param $port
+     * @param $prefix
      * @param $auth
      */
     public function __construct($host = '127.0.0.1', $port = 6379, $prefix = null, $auth = null)
